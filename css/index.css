@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+html{
+    scroll-behavior: smooth;
+}
+.navbar{
+  display: grid;
+  grid-template-columns: 350px auto 350px;
+  height: 100px;
+  width: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: 1;
+  color: white;
+  position: sticky;
+  top: 0px;
+}
+.navbar::before{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: black;
+    z-index: -1;
+    opacity: 0.5;
+}
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 800px; */
+}
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.logo h1{
+    border: 3px solid white;
+    padding: 5px;
+}
+.email{
+    display: flex;
+    /* border: 2px solid red; */
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
+}
+.email h4 a{
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    opacity: 0.8;
+}
+.navbar ul li{
+    list-style: none;
+    box-sizing: border-box;
+    margin: 10px 20px;
+    
+}
+.navbar ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-family: sans-serif;
+    font-weight: bolder;
+}
+.navbar ul li a:hover{
+    color: green;
+   transition: all .2s ease-in-out;
+}
+#home{
+   
+    width: 100%;
+  
+    height: 100vh;
+    /* border: 2px solid red; */
+    color: white;
+  
+    
+}
+#home::before{
+    content: "";
+    background:url(../image/mybg.jpg);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: -2;
+
+
+
+}
+#home::after{
+    content: "";
+    background-color:black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    opacity: .8;
+    z-index: -1;
+
+}
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.ppt{
+    font-size: 3.2rem;
+    font-family: sans-serif;
+}
+.search input{
+    height: 50px;
+    border-radius: 30px;
+    outline: none;
+  
+}
+.search{
+   position: relative;
+   left: 40px;
+   top: 40px;
+}
+#email{
+    width: 300px;
+    border: none;
+    box-sizing: border-box;
+    padding: 20px;
+}
+#btn{
+    width: 150px;
+    position: relative;
+    right: 100px;
+    top: 1px;
+    border: none;  
+    background-color: green;
+    color: white;
+    font-size: large;
+}
+#btn:hover{
+    background-color: black;
+    transition: all 0.4s ease-in-out;
+    opacity: 0.9;
+}
+::placeholder{
+    color: gray;
+}
+.para p{
+    word-spacing: 3px;
+    line-height: 1.5;
+
+}
+.parasearch{
+    position: relative;
+    top: 50px;
+}
+
+
+
+
+
+
+
+
+#mid{
+    display: grid;
+    /* grid-template-columns: 800px auto; */
+    grid-template-columns: repeat(auto-fit , minmax(350px,1fr));
+    font-family: sans-serif;
+    /* opacity: 0.7; */
+
+}
+.text{
+    /* border: 2px solid red; */
+    box-sizing: border-box;
+    padding-left: 150px;
+    opacity: 0.7;
+
+}
+
+.text h1{
+    /* line-height: 100px; */
+    margin-top: 120px;
+    margin-bottom: 50px;
+   font-size: 2.2rem;
+   opacity: 0.8;
+}
+.text ul{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+    /* border: 2px solid red ; */
+    height: 80px;
+    width: 59%;
+    background-color: whitesmoke;
+    border: 15px;
+    margin-bottom: 73px;
+
+}
+.text ul li{
+
+    list-style: none;
+ margin-right: 40px;
+ font-size: 1.1rem;
+ font-weight: bolder;
+
+ /* border-bottom: 0px solid green; */
+ height: 30px;
+
+ box-sizing: border-box;
+
+}
+.text ul li a{
+    /* border: 2px solid red; */
+    opacity: .7;
+    color: black;
+    text-decoration: none;
+}
+.text ul li:active{
+    color: red;
+}
+.text ul li:hover{
+    border-bottom: 4px solid green;
+    transition: all 0.2s ease-in-out;
+
+}
+.active {
+    border-bottom: 4px solid green;
+    
+}
+
+.text h3{
+   margin-top: 30px;
+   margin-bottom: 15px;
+
+}
+.text p{
+    text-align: justify;
+}
+.image{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img{
+    height: 600px;
+    width: 600px;
+    /* border: 2px solid red; */
+    background: url(../image/feature-mockup.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    opacity: none;
+    position: relative;
+    top: 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#foot{
+    position: relative;
+    top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+.headingfoot{
+    padding: 40px;
+    font-size: 2.0rem;
+    opacity: .8;
+    text-align: center;
+}
+.grid{
+    display: grid;
+    /* grid-template-columns: 350px 350px 350px; */
+   /* grid-template-columns: auto-fit,minmax(350px,1fr); */
+    grid-template-rows: 200px 200px 200px 50px;
+    justify-content: center;
+    /* border: 2px solid red; */
+    /* align-items: center; */
+    /* width: 56.5%; */
+    
+    position: relative;
+    
+}
+#foot::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: whitesmoke;
+    z-index: -1;
+    opacity: 0.6;
+
+}
+
+.box1{
+    grid-row: 1/span 2;
+    grid-column: 1/2;
+   background: url(../image/team-image1.jpg);
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+
+}
+.box2{
+    background-color: white;
+}
+.box3{
+    grid-row: 1/ span 2;
+    grid-column: 3/4;
+    background: url(../image/team-image2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+}
+.box4{
+    grid-row: 3/4;
+    grid-column: 1/2;
+    background-color: white;
+}
+.box5{
+    grid-row: 2/4;
+    grid-column: 2/3;
+    background: url(../image/team-image3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  
+}
+.box6{
+    grid-row: 3/4;
+    grid-column: 3/4;
+    background-color: white;
+}
+.box7{
+    grid-column: 1/span 3;
+   
+}
+.box h1{
+    line-height: 50px;
+}
+.box p{
+    margin-top: 20px;
+}
+.box2, .box4 , .box6{
+    padding: 15px 20px;
+    opacity: .8;
+
+}
